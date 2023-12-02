@@ -1,0 +1,194 @@
+/* ======== Google Fonts ======== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* ======== Fonts ======== */
+@font-face {
+    font-family: PPMori;
+    src: url(../assets/fonts/PPMori/PPMori-Regular.otf);
+}
+
+/* ======== BASE Reset ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* ======== Utilities ======== */
+.flex {
+    display: flex;
+}
+
+.flex-y {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-conter {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.main-wrapper {
+    background: #0f0d0d;
+}
+
+.section-heading {
+    font-size: 7.4vw;
+    font-family: 'PPMori', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10rem;
+}
+
+/* ======== Cursor ======== */
+.cursor {
+    width: 16px;
+    height: 16px;
+    background: #edbfff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    /* transition: left linear 0.1s, top linear 0.1s; */
+}
+
+/* ======== Buttons ======== */
+.btn {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 2rem;
+}
+
+.btn-primary {
+    color: #0f0d0d;
+    background-color: #edbfff;
+}
+
+/* ======== Navbar ======== */
+.header {
+    width: 100%;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.nav {
+    height: 80px;
+}
+
+.nav__logo {
+    width: 56px;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 2.5rem;
+}
+
+.nav-menu__link {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.link--active {
+    border-bottom: 1px solid white;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+
+    &:first-child {
+        margin-right: -24px;
+    }
+}
+
+/* ======== Hero ======== */
+.hero {
+    min-height: 100vh;
+}
+
+.hero__content {
+    padding: 10vw 5vw;
+}
+
+.hero__title {
+    --text-size: 8vw;
+    color: white;
+    font-size: var(--text-size);
+    font-family: 'PPMori', sans-serif;
+    font-weight: 400;
+    line-height: calc(var(--text-size) * 1);
+}
+
+.hero__title:last-child {
+    text-align: right;
+}
+
+.hero__video {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* ======== Section-2 ======== */
+.section-2 {
+    color: #0f0d0d;
+    padding: 8vw;
+    border-bottom: 1px solid #0f0d0d;
+}
+
+.section-2__title {
+    font-size: 4vw;
+    font-family: 'PPMori', sans-serif;
+    font-weight: 400;
+}
+
+.section-2__content {
+    max-width: 250px;
+}
+
+.section-2__paragraph {
+    font-family: 'PPMori', sans-serif;
+    font-weight: 400;
+    line-height: calc(1rem * 1.6);
+    margin-bottom: 20px;
+}
+
+/* ======== work ======== */
+.work {
+    color: #0f0d0d;
+    min-height: 100vh;
+    padding: 8vw;
+}
+
+/* ======== Section-4 ======== */
+.section-4 {
+    min-height: 141.6vh;
+    background: #0f0d0d;
+}
